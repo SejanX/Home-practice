@@ -1,0 +1,190 @@
+/* button{
+    background-color: aqua;
+    border: none;
+    padding: 40px 80px;
+    position: relative;
+    z-index: 1 ;
+   border: green solid 5px;
+}
+button:hover{
+    background-color:black;
+    color: white;
+}
+.one{
+    background: rgb(111, 0, 128);
+    height: 0;
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: 2s linear;
+    z-index: -1;
+}
+button:hover .one{
+    height: 50%;
+    width: 50%;
+}
+.two{
+    background: rgb(128, 0, 0);
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    transition: 2s linear;
+
+}
+button:hover .two{
+    height: 50%;
+    width: 50%;
+}
+.three{
+    background: rgb(111, 0, 128);
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    bottom:  0px;
+    right: 0px;
+    z-index: -1;
+    transition: 2s linear;
+
+}
+button:hover .three{
+    height: 50%;
+    width: 50%;
+}
+.four{
+    background: rgb(128, 0, 9);
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    bottom:  0px;
+    left: 0px;
+    z-index: -1;
+    transition: 2s linear;
+
+}
+button:hover .four{
+    height: 50%;
+    width: 50%;
+} */
+/* .ABC{
+    background-color: aqua;
+    border: none;
+    margin: 10px ;
+    padding: 40px 80px;
+    position: relative;
+}
+.ABC::before{
+    content: " ";
+    background-color: brown;
+    position: absolute;
+    height: 10px;
+    width: 0%;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 2s linear;
+}
+.ABC:hover::before{
+    width: 100%;
+}
+.ABC::after{
+    content: " ";
+    background-color: brown;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 2s linear;
+    
+}
+.ABC:hover::after{
+    width: 0%;
+    opacity: .2;
+}
+.five{
+    background-color: brown;
+    position: absolute;
+    top: 50%; 
+    height: 0%;
+    left: 105%; 
+    width: 10px;
+   transform: translate(-0%,-50%);
+    
+   
+
+}
+.ABC:hover .five{
+    height: 100%;
+    transition: 2s ;
+}
+.six{
+    background-color: brown;
+    position: absolute;
+    top: 50%; 
+    height: 100%;
+    left: 115%; 
+    width: 10px;
+   transform: translate(-0%,-50%);
+    
+}
+.ABC:hover .six{
+    height: 0%;
+    transition: 2s;
+} 
+ */
+
+
+/* ..............................................................................
+                        Animation
+.............................................................................. */
+
+.Animation{
+    width: 1400px;
+    height: 800px;
+   background: url(../Image/road.jpg);
+   background-size: cover;
+   background-repeat: none;
+   background-position: center;
+   border: 2px solid red;
+   margin: 100px auto;
+   position: relative;
+ 
+
+}
+.Animation .box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left:0;
+    animation: abc 10s linear infinite;
+}
+@keyframes abc{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0%; 
+        left: 100%;
+        transform: translate(-100%);
+    }
+    50%{
+        top: 100%; 
+        left: 100%;
+        transform: translate(-100%,-100%);
+      
+    }
+    75%{
+        top: 100%; 
+        left: 0%;
+        transform: translate(-0%,-100%);
+      
+    }
+}
